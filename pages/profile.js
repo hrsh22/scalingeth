@@ -34,16 +34,19 @@ export default function ProfilePage(props) {
     <div>
       <Header
         color="transparent"
-        brand="NextJS Material Kit"
+        brand="MintBoxx 📦"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "white"
+          color: "white",
         }}
         {...rest}
       />
-      <Parallax small filter image="/img/profile-bg.jpg" />
+
+<Parallax image="https://static.vecteezy.com/system/resources/previews/005/406/681/original/rocket-in-hole-vector.jpg">
+
+      </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
@@ -52,149 +55,42 @@ export default function ProfilePage(props) {
                 <div className={classes.profile}>
                   <div>
                     <img
-                      src="/img/faces/christian.jpg"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLDERscs5d-zl6ao7Gp7c1nRJlSVFtWpzT3t180tFNg_UP_YLx1YXMOOMLJGCasvy0gho&usqp=CAU"
                       alt="..."
                       className={imageClasses}
                     />
                   </div>
-                  <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-twitter"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-instagram"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-facebook"} />
-                    </Button>
-                  </div>
                 </div>
               </GridItem>
             </GridContainer>
-            <div className={classes.description}>
-              <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
-              </p>
-            </div>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
-                <NavPills
-                  alignCenter
-                  color="primary"
-                  tabs={[
-                    {
-                      tabButton: "Studio",
-                      tabIcon: Camera,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/studio-1.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/studio-2.jpg"
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/studio-5.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/studio-4.jpg"
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      )
-                    },
-                    {
-                      tabButton: "Work",
-                      tabIcon: Palette,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/olu-eletu.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/clem-onojeghuo.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/cynthia-del-rio.jpg"
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/mariya-georgieva.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/clem-onojegaw.jpg"
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      )
-                    },
-                    {
-                      tabButton: "Favorite",
-                      tabIcon: Favorite,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/mariya-georgieva.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/studio-3.jpg"
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/clem-onojeghuo.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/olu-eletu.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/studio-1.jpg"
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      )
-                    }
-                  ]}
-                />
+                <GridContainer justify="center">
+                  <GridItem xs={12} sm={12} md={4}>
+                    <img
+                      alt="..."
+                      src="/img/examples/studio-1.jpg"
+                      className={navImageClasses}
+                    />
+                    <img
+                      alt="..."
+                      src="/img/examples/studio-2.jpg"
+                      className={navImageClasses}
+                    />
+                  </GridItem>
+                  <GridItem xs={12} sm={12} md={4}>
+                    <img
+                      alt="..."
+                      src="/img/examples/studio-5.jpg"
+                      className={navImageClasses}
+                    />
+                    <img
+                      alt="..."
+                      src="/img/examples/studio-4.jpg"
+                      className={navImageClasses}
+                    />
+                  </GridItem>
+                </GridContainer>
               </GridItem>
             </GridContainer>
           </div>
