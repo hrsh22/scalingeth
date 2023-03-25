@@ -38,7 +38,7 @@ export default function ProfilePage(props) {
 
   const parseURL = async (url) => {
     const ipfsHash = url.slice(7);
-    const ipfsURL = `https://nftstorage.link/ipfs/${ipfsHash}`;
+    const ipfsURL = `https:/${ipfsHash}`;
     const data = await fetch(ipfsURL);
     const json = await data.json();
     console.log(json);
