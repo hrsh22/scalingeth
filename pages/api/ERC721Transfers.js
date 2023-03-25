@@ -1,5 +1,8 @@
 export default async function handler(req, res) {
-    const url = 'https://nftmintapi-production.up.railway.app/api/ERC721Transfers';
+
+    const owner = req.query.owner;
+
+    const url = `https://nftmintapi-production.up.railway.app/api/ERC721Transfers?owner=${owner}`;
   
     try {
       const response = await fetch(url);
