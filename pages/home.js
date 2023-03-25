@@ -15,18 +15,6 @@ import GridItem from "../components/Grid/GridItem.js";
 import Button from "../components/CustomButtons/Button.js";
 import Parallax from "../components/Parallax/Parallax.js";
 // sections for this page
-import SectionBasics from "../section/Components-Sections/SectionBasics.js";
-import SectionNavbars from "../section/Components-Sections/SectionNavbars.js";
-import SectionTabs from "../section/Components-Sections/SectionTabs.js";
-import SectionPills from "../section/Components-Sections/SectionPills.js";
-import SectionNotifications from "../section/Components-Sections/SectionNotifications.js";
-import SectionTypography from "../section/Components-Sections/SectionTypography.js";
-import SectionJavascript from "../section/Components-Sections/SectionJavascript.js";
-import SectionCarousel from "../section/Components-Sections/SectionCarousel.js";
-import SectionCompletedExamples from "../section/Components-Sections/SectionCompletedExamples.js";
-import SectionLogin from "../section/Components-Sections/SectionLogin.js";
-import SectionExamples from "../section/Components-Sections/SectionExamples.js";
-import SectionDownload from "../section/Components-Sections/SectionDownload.js";
 
 import styles from "../styles/jss/nextjs-material-kit/pages/components.js";
 
