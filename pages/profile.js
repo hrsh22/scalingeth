@@ -1,4 +1,7 @@
 import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
+
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -30,6 +33,21 @@ export default function ProfilePage(props) {
     classes.imgFluid
   );
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
+
+  async function fetchData() {
+    try {
+      const response = await axios.get("http://nftmintapi-production.up.railway.app/api/ERC721Transfers")
+      setUser(response.data)
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  useEffect(() => {
+    fetchData();
+  },[])
+
+
   return (
     <div>
       <Header
