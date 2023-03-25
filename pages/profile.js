@@ -57,9 +57,10 @@ export default function ProfilePage(props) {
     try {
       const addr = localStorage.getItem("walletAddress");
 
-      const response = await axios.get(
-        `http://nftmintapi-production.up.railway.app/api/ERC721Transfers?owner=${addr}`
-      );
+      // const response = await axios.get(
+      //   `http://nftmintapi-production.up.railway.app/api/ERC721Transfers?owner=${addr}`
+      // );
+      const response = await axios.get(`/api/ERC721Transfers?owner=${addr}`)
       console.log(response.data.allNFTs.length);
       var dataList = [];
       var imgList = [];
