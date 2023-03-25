@@ -19,10 +19,10 @@ import TextField from "@mui/material/TextField";
 
 import InfoArea from "../../components/InfoArea/InfoArea.js";
 import TouchAppIcon from "@mui/icons-material/TouchApp";
-import Favorite from "@material-ui/icons/Favorite";
+
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 import { NFTStorage, File, Blob } from "nft.storage";
-import Muted from "../../components/Typography/Muted.js";
+
 
 import {
   QUICKMINT_FACTORY_ABI,
@@ -51,7 +51,6 @@ export default function QuickMintForm() {
   const [fileList, setFileList] = useState([]);
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
-  const [mintLauncher, setMintLauncher] = useState(false);
   const [collectionExists, setCollectionExists] = useState(null);
   const [collectionName, setCollectionName] = useState("");
   const [collectionSymbol, setCollectionSymbol] = useState("");
