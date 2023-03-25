@@ -37,7 +37,9 @@ export default function ProfilePage(props) {
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
 
   const parseURL = async (url) => {
-    const data = await fetch(url);
+    const ipfsHash = url.slice(7);
+    const ipfsURL = `https://nftstorage.link/ipfs/${ipfsHash}`;
+    const data = await fetch(ipfsURL);
     const json = await data.json();
     console.log(json);
     return json;
@@ -54,9 +56,7 @@ export default function ProfilePage(props) {
     try {
       const addr = localStorage.getItem("walletAddress");
 
-      const response = await axios.get(
-        `http://nftmintapi-production.up.railway.app/api/ERC721Transfers?owner=${addr}`
-      );
+      const response = await axios.get(`/api/ERC721Transfers?owner=${addr}`);
       console.log(response.data.allNFTs.length);
       var dataList = [];
       var imgList = [];
